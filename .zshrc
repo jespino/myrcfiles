@@ -43,10 +43,14 @@ source /usr/bin/cdb.sh
 # Java & grails homes
 export JAVA_HOME="/usr/lib/jvm/java-7-openjdk/"
 export GRAILS_HOME="/opt/grails/"
-export PATH="$PATH:/opt/grails/bin:~/.cabal/bin"
+export PATH="$PATH:/opt/grails/bin"
 
 # Cabal sandbox paths
-export PATH="$PATH:.cabal-sandbox/bin/"
+export PATH="$PATH:.cabal-sandbox/bin/:/home/jespino/.cabal/bin"
+
+# ruby gems paths
+export PATH="$PATH:/home/jespino/.gem/ruby/2.1.0/bin"
+
 
 export EDITOR="vim"
 bindkey -v
